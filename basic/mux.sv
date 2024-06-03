@@ -3,7 +3,7 @@
 module mux #(
     parameter SIZE = 'd1,
     parameter CHANNELS = 'd2,
-    parameter WIDTH = $clog2(CHANNELS << 1)
+    parameter WIDTH = $clog2(CHANNELS)
 ) (
     input [SIZE-1:0] in[CHANNELS-1:0],
     input [WIDTH-1:0] sel,
